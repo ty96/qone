@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'ProximaNovaExCnRgBold';
+    src: url('../fonts/proximanovaexcn-bold-webfont.eot?') format('eot'), url('../fonts/proximanovaexcn-bold-webfont.woff') format('woff'), url('../fonts/proximanovaexcn-bold-webfont.ttf') format('truetype'), url('../fonts/proximanovaexcn-bold-webfont.svg#ProximaNovaExCnRgBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+    /* HORIZONTAL MENU */
+
+#hmenu {
+    color: #333;
+    height: 100px;
+    display: block;
+    padding: 0 40px;
+    margin: 0 auto;
+    background: #fff;
+    font-family: 'ProximaNovaExCnRgBold';
+    text-transform: none;
+    border: 0;
+    text-align: right;
+}
+
+#hmenu > ul {
+    list-style: inside none;
+    padding: 20px 0;
+    margin: 0;
+    height: 100%;
+}
+
+#hmenu > ul > li {
+    list-style: inside none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+}
+
+#hmenu > ul > li.logo {
+    padding: 0 10px;
+    margin: 0;
+    float: left;
+}
+
+
+#hmenu > ul > li.logo a {
+    padding: 0;
+    margin: 0;
+}
+
+#hmenu > ul > li.logo a:hover {
+    background: #fff;
+}
+
+#hmenu > ul > li.logo img {
+    height: 60px;
+    display: block;
+}
+
+#hmenu > ul > li > a /* menu item without sub menu items */ {
+    outline: none;
+    color: #333;
+    display: block;
+    position: relative;
+    padding: 23px 20px;
+    font: normal 14px/100% ProximaNovaExCnRgBold;
+    text-align: center;
+    text-decoration: none;
+}
+
+#hmenu > ul > li > a:hover /* menu item highlight without sub menu items */ {
+    background: #efefef;
+}
+
+#hmenu ul li.sub-menu:hover > a /* menu item highlight with sub menu items */ {
+    background: #fff;
+    padding: 10px 20px;
+    z-index: 999;
+}
+
+#hmenu ul li.sub-menu:hover > ul, #hmenu ul li.sub-menu:hover > div, #hmenu ul li.active-sub-menu:hover > ul, #hmenu ul li.active-sub-menu:hover > div { display: block; }
+
+#hmenu ul li.sub-menu > a:hover { background: #86BBDF; }
+
+#hmenu ul li > ul, #hmenu ul li > div {
+    display: none;
+    width: auto;
+    position: absolute;
+    top: 60px;
+    padding: 10px 0;
+    background: #86BBDF;
+    z-index: 999;
+}
+
+#hmenu ul li > ul { width: 200px; }
+
+#hmenu ul li > ul li {
+    display: block;
+    list-style: inside none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#hmenu ul li > ul li a {
+    outline: none;
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 10px 20px;
+    font: normal 14px/100% 'ProximaNovaExCnRgBold';
+    color: #fff;
+    text-decoration: none;
+}
+
+#hmenu > ul > li > ul > li a:hover { background: #1E5071; }
+
+
+#hmenu ul li > ul li.active-menu { background: #efefef; }
+
+#hmenu ul li.active-menu, #hmenu ul li.active-sub-menu { background: #fff; }
+
+@media (max-width: 540px) {
+    #hmenu {
+        padding: 0;
+    }
+    #hmenu > ul > li > a {
+        padding: 24px 3px;
+        font-size: 12px;
+    }
+}
+
+/* VERTICAL MENU */
+
+/* #vmenu {
+    width: 250px;
+    margin-left: -100%;
+    position: relative;
+    background: #FFFFFF;
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+#vmenu li {
+    font: sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#vmenu a {
+    background: #BFC3C6;
+    border-bottom: 1px solid #FFFFFF;
+    color: #465b65;
+    display: block;
+    margin: 0;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+#vmenu a:hover {
+    background: #96A39C;
+    color: #465b65;
+    padding-bottom: 8px;
+} */
